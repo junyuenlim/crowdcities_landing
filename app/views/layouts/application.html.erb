@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>App</title>
+  <title>Crowdcities</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <%= tag :meta, name: "viewport", content: "width=device-width, initial-scale=1.0" %>
 </head>
 <body>
 
-<%= yield %>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=478161788942376";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<!--<%= render 'layouts/header' %>-->
+
+	<div class="container" style="margin-top: 100px;">
+		<%= yield %>
+	</div>
+
+	<!--<%= render 'layouts/footer' %>-->
 
 </body>
 </html>
