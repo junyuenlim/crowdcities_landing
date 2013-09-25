@@ -5,7 +5,17 @@
 /*- Crowdcities -*/
 
 body {
-	background-color: #001c2c;
+}
+
+@media (max-width: 768px){
+	body {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.row {
+		padding-left: 20px;
+	}
 }
 
 .footer {
