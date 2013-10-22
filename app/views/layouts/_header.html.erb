@@ -1,26 +1,20 @@
- <div class="navbar navbar-fixed-top navbar-inverse">
-    <div class="navbar-inner"  style="min-height: 70px; padding-top: 20px;">
-        <div class="container">
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </a>
-             <a class="brand" href="/">Crowdcities</a>
-
-                <div class="nav-collapse">
-                    <ul class="nav">
-                        <li>
-                            <%= link_to 'Home',  root_path %>
-                        </li>
-                        <li>    
-                            <%= link_to 'About',  about_path %>
-                        </li>
-                    </ul>
-                    <ul class="nav pull-right">
-                                <li><%= link_to 'Login with Facebook',  '#' %></li>
-                    </ul>
-                </div>
-        </div>
+<div id="navbarExample" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#index"><img src="/assets/cc-brick.svg" width="40" style="padding-bottom: 5px;"> CrowdCities</a>
     </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class><a href="#communities">Local Communities</a></li>
+        <li class><a href="#projects">Projects & Petitions</a></li>
+        <li class><a href="#stakeholders">CrowdSourcing</a></li>
+      </ul>
+
+    </div>
+  </div>
 </div>

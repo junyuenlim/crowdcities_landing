@@ -1,28 +1,89 @@
 @import 'bootstrap';
 
-@import 'bootstrap-responsive';
-
 /*- Crowdcities -*/
+
+.blur-background {
+	background-image:url('Blur-3.jpg');
+	background-size: 100% 100%;
+}
+
+.navbar {
+	min-height: 80px;
+}
+
+.navbar-default {
+	background: rgba(248, 248, 248, .95);
+}
+
+.navbar-nav > li > a {
+	line-height: 70px;
+}
+
+.navbar-default .navbar-brand {
+	color: black;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #428bca;
+}
+
+.navbar-brand {
+	line-height: 65px;
+	font-weight: 700;
+	font-size: 1.5em;
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+	color: #555555;
+	background: rgba(248, 248, 248, .35);
+}
 
 body {
 }
 
-@media (max-width: 768px){
-	body {
-		padding-left: 0px;
-		padding-right: 0px;
-	}
-
-	.row {
-		padding-left: 20px;
-	}
+h3 {
+	font-weight: 700;
+	margin-bottom: 40px;
 }
 
-.footer {
-	background-color: grey;
-	width: 100%;
-	height: 50px;
-	bottom: 0px;
-	position: fixed;
-	left: 0px;
+p {
+	font-size: 0.9em;
+}
+
+.input-lg {
+  border-radius: 0px;
+}
+
+.row {
+	margin: 100px 0px;
+}
+
+hr {
+	margin: 100px 0;
+}
+
+.btn {
+  border-radius: 0px;
+  border: 0px;
+}
+
+.btn-primary {background-color: #29abe2;}
+.btn-primary:hover {background-color: #2984e2;}
+
+.icon {
+	font-size: 1em;
+	margin-right: 10px;
+	color: white;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 940px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
 }
